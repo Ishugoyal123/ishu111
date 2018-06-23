@@ -1,0 +1,86 @@
+
+jdk download -->1.8(stable) or  9 version(ustable)
+
+jdk--> java development -->
+jdk -->compiler (source code banate)
+jdk -->(.kt)kotlin compiler --> error detection --> (.class)bytecode(byte code is intermedia code neither source code nor it is a native code(native code machine dependent code))--> jvm --> bytecode code convert -->native-->
+
+
+jre runtime envirnment provide karta hai space provide karta hai
+
+
+ 
+source code logic share kar deya
+
+feature dena hai but source bhi secure karna hai  
+
+machine specific means shir ek machine par chalta hai diff machine par different locations par store hoga
+
+
+
+Kotlin -statically typed programing language
+
+
+
+dynamically typed programming language/
+
+
+eg-python,javascript,coffeescript
+
+eg-c,c++,java
+
+
+
+c --. int value=90          var value =90;/int
+value="ram";                value = "Ram";/string
+                            value=32.87;float
+
+
+
+kotlin m bhi data type specipy karna padega
+
+
+Intellij IDEA ,kotlin ->IDE
+intellij idea,android studion kotlin-->jetbrain --> company ide development 
+
+-->java/kotlin-- primary language --> kotlin,secondary-->java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
