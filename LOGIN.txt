@@ -1,101 +1,196 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="40sp"
-    android:background="@color/red">
-
-
-<TextView
-    android:id="@+id/famousTextView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="10sp"
-    android:fontFamily="cursive"
-    android:gravity="center"
-    android:text="famous"
-    android:textColor="@color/white"
-    android:textSize="50sp"
-    />
 
     <TextView
-        android:id="@+id/EmailTextView"
-        android:layout_below="@+id/famousTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="EMAIL"
-        android:textSize="20sp"
-
-        android:layout_marginTop="15sp"
-
-        />
-<EditText
-    android:inputType="textEmailAddress"
-    android:id="@+id/EmailEditView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/EmailTextView"
-    android:layout_marginTop="10sp"
-    android:backgroundTint="@color/white"
-    android:hint="Enter your email"
-
-    />
+        android:layout_marginTop="50dp"
+        android:text="famous"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:id="@+id/famous"/>
 
     <TextView
-        android:layout_below="@+id/EmailEditView"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:layout_below="@+id/famous"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="Password"
-        android:textSize="20sp"
-        android:layout_marginTop="15sp"
-        android:id="@+id/PasswordtextView"
+        android:text="Email"
+        android:layout_marginTop="20dp"
+        android:id="@+id/emailTextView"/>
 
-        />
     <EditText
-        android:backgroundTint="@color/white"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint=""
+        android:backgroundTint="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/PasswordtextView"
-        android:layout_marginTop="10sp"
-        android:id="@+id/PasswordEditView"
-        android:hint="PASSWORD"
+        android:layout_below="@+id/emailTextView"/>
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:layout_below="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="20dp"
+        android:id="@+id/passwordTextView"/>
+
+    <EditText
         android:inputType="textPassword"
-        android:textColor="@color/white"
-
-        />
-    <Button
-        android:id="@+id/LoginButton"
-        android:layout_below="@id/PasswordEditView"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:textColor="@color/white"
-        android:layout_marginTop="20sp"
-        android:background="@color/redDark"
-        />
+        android:layout_below="@+id/passwordTextView"
+        android:id="@+id/passwordEditText"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"
+        android:id="@+id/loginButton"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_below="@+id/LoginButton"
-        android:layout_marginTop="25sp"
-        android:layout_centerHorizontal="true"
-        android:text="NO Account yet?Create One"
-        android:linksClickable="true"
-        android:autoLink="web"
-        android:textSize="18dp"
-
-
-        />
+        android:text="No Account Yet? Create One"
+        android:layout_below="@+id/loginButton"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
 
 
 
-</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Step-1 Downcasting
+        // findViewByID
+
+       // var email = findViewById<EditText>(R.id.emailEditText)
+        //var password : EditText = findViewById(R.id.passwordEditText)
+        var loginBtn = findViewById<Button>(R.id.loginButton)
+
+
+
+
+
+        // Step-2 Attach Listener
+        // WE have multiple ways to attach listener
+        // Step-3: Attach Handler
+        loginBtn.setOnClickListener {
+
+            var em = emailEditText.text.toString()
+            var pw = passwordEditText.text.toString()
+            //-->string-->predefined class hai
+
+
+
+          //  if(em.trim().isEmpty() && pw.trim().isEmpty())
+            //{
+              //  Toast.makeText(this,"EMail cannot be blank",Toast.LENGTH_LONG).show()
+            //}
+            //else {
+
+            //}
+            if(em.isNotBlank() && pw.isNotBlank())
+            {
+                Toast.makeText(this,"Welcome $em ",Toast.LENGTH_LONG).show()
+            }
+            else {
+                Toast.makeText(this,"EMail cannot be blank",Toast.LENGTH_LONG).show()
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //if(em.isEmpty() && pw.isEmpty())
+            //{
+              //  Toast.makeText(this,"EMail cannot be blank",Toast.LENGTH_LONG).show()
+            //}
+
+            // else if(pwd.isEmpty)
+            //{}
+
+
+
+            //this current object ki reference -->application launch instance ho jaega -->activity manager ko manage kar rha hoga
+            // String data
+            // Toast class
+
+            // 1st param --> class reference --> this --> keyword --> current object reference
+            // 2nd message --> message
+            // 3rd --> Duration --> Short and Long
+
+            //Toast.makeText(this, "Welcome $em", Toast.LENGTH_LONG).show()
+            // center --> Bottom
+
+        }
+
+
+
+
+        // Start Emulator and Application Run
+
+        // Emulator -->Android Virtual Device(AVD) -->
+
+
+        // R --> R is a predefined class in Android which is automatically created
+        //      with every android project --> R contains required predefiend id's which is
+        // required by android studio and by the current project.
+        // always in modifying state whenever you start setting some data either in front-end
+        // or in back-end
+
+        // layout
+        // login_screen
+
+
+
+
+
+
+
+
+
