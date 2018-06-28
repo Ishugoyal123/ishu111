@@ -1,0 +1,79 @@
+LAYOUT--> FRONT END --> LAYOUT AND WIDGET
+
+
+LAYOUT--> POSITION K LEYE HOTE HAI
+
+
+LAYOUT--> RelativeLayout:  relativelayout is a layout which always align widgets according to the parent or the other child elements.always take the relative position of parent or sibling an then arrange the position of widget
+
+
+adv
+--> drag and drop
+--> no of attributes--> layout_below, layout_endof,center_horizontal,align_parentend etc
+
+
+-->it helps to avoid nested layouts
+
+Dis:
+--> dependency on either parent or other siblings
+
+
+
+
+object class--> root of all classes 
+class car{
+
+
+
+}
+object-->view(text view,edittext)->view group(collection of views)eg->layout
+all widget-->view
+
+eg--> layout -->relativelayout inherits view group
+All inherit View 
+
+
+text,textcolor,textaligment,listerners and handler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
