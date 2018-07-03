@@ -1,0 +1,94 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/colorBlue"
+    >
+
+
+    <ImageView
+        android:id="@+id/drop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/drop" />
+
+
+
+     <TextView
+    android:textAlignment="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DROPPIUM"
+    android:textSize="25dp"
+    android:textColor="@color/colorWhite"
+    />
+
+
+    <EditText
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edit"
+        android:inputType="text"
+        android:text="User name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edit"
+        android:inputType="textPassword"
+        android:text="username"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorBlue1"
+
+
+        />
+
+
+
+
+    <TextView
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18dp"
+    android:text="Forgot your password?"
+    android:textAlignment="center"
+    android:textColor="@color/colorWhite"
+    />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
