@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/colorWhite"
+    tools:context=".Main2Activity">
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/tic"
+        />
+
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:layout_width="340dp"
+
+        android:layout_height="442dp"
+
+        android:layout_centerInParent="true"
+
+        android:layout_gravity="center|bottom"
+
+        android:src="@drawable/tic3" />
+
+
+
+
+
+
+
+</LinearLayout>
