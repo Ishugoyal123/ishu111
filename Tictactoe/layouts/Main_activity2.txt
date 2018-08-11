@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".tic3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/tic" />
+
+
+        <Space
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="100dp" />
+
+
+        <Button
+            android:id="@+id/single1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single player"
+
+            android:textColor="@android:color/white"
+
+            android:textSize="24dp" />
+
+
+        <Button
+            android:id="@+id/mul1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="multiple player"
+
+            android:textColor="@android:color/white"
+
+            android:textSize="24dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ONLINE games"
+            android:textColor="@android:color/white"
+
+            android:textSize="24dp"
+
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="more games"
+            android:textColor="@android:color/white"
+
+            android:textSize="24dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

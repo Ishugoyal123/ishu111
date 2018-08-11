@@ -1,0 +1,14 @@
+ <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBlack">#121112</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="yello">#f0d909</color>
+    <color name="colorblue">#0cebeb</color>
+
+    <color name="black">#32000000</color>
+    <color name="statusBar">#32000000</color>
+    <color name="banner">#575757</color>
+    <color name="background_material_dark">#7e303030</color>

@@ -1,0 +1,34 @@
+package com.example.pawangolyal.game2
+
+import android.app.Activity
+import android.content.Intent
+import android.os.Bundle
+
+import kotlinx.android.synthetic.main.activity_tic3.*
+
+class tic3 : Activity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_tic3)
+
+        mul1.setOnClickListener{
+
+            var intent= Intent(this,::class.java)//mulple player
+
+            startActivity(intent)
+
+
+        }
+
+
+        single1.setOnClickListener{
+
+            var intent= Intent(this,single::class.java)//single player means cpu
+
+            startActivity(intent)
+
+
+        }
+    }
+}

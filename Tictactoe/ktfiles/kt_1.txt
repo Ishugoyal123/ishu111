@@ -1,0 +1,8 @@
+
+        let123.setOnClickListener {
+
+            var intent=Intent(this,Main2Activity::class.java)//activity ka naam dekh leo chu
+            startActivity(intent)
+
+
+        }
